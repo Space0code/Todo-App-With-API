@@ -67,7 +67,7 @@ fun ErrorScreen(modifier: Modifier = Modifier) {
 @Composable
 fun TodoApp(todoViewModel: TodoViewModel = viewModel()) {
     Scaffold(
-        topBar = { TodoTitleBar() } // Added Title Bar Here
+        topBar = { TodoTitleBar() }
     ) { innerPadding ->
         TodoScreen(Modifier.padding(innerPadding), uiState = todoViewModel.todoUiState)
     }
